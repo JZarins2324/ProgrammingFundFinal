@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang= "en-US">
+  <head>
+    <meta charset = "utf-8">
+    <title>Story Title</title>
+  </head>
+  <body>
+    <p>
+      <!--
+      Promblem Statment:
+      Display the start of the story and prompt user for a choice.  Depending on the user's input calculate and display the corresponding story change and prompt user for another choice.
+
+      Nouns: Start of story, choice, story change
+
+      Verbs: Display, prompt
+      -->
+    </p>
+    <p>
+      <!--
+      Input:
+        choice
+      Proccessing and Output:
+        Calculate story change
+        Display story change
+        Prompt for choice        
+      -->
+    </p>
+    <p>
+      <!--
+      Psuedocode:
+
+      (storychange functions)
+
+      Start(choice1)
+        Display the begining of the story
+        Prompt for choice1 with "What do you want to do?"
+        return choice1
+
+      Restart(reset)
+        Prompt for reset with "Do you want to restart?"
+        return reset
+
+      set choice1 to ""
+      set choice2 to ""
+      set choice3 to ""
+      set maxLoops to 1
+      set loopCounter to 0
+      set reset to ""
+
+      WHILE loopCounter < MaxLoops DO
+        choice1 = Start(choice1)
+
+        IF choice1 = "1" THEN
+          choice2 = storychangefunction
+          IF choice2 = "1" THEN
+            choice3 = storychangefunction
+          ELSE IF choice2 = "2" THEN
+            choice3 = storychangefunction
+        ...
+
+        ELSE IF choice1 = "2" THEN
+          choice2 = storychangefunction
+          IF choice2 = "1" THEN
+            choice3 = storychangefunction
+          ELSE IF choice2 = "2" THEN
+            choice3 = storychangefunction
+        ...
+
+        loopCounter++
+
+        reset = Restart(reset)
+          IF reset = "yes" OR "y" THEN
+            maxLoops++
+
+      -->
+    </p>
+	<p>
+	  <!--
+	  Test 1:
+	  
+	  Input(R, R, Y)
+	  
+	  Expected Output: You made it out of the forest
+	  
+	  Actual Output: You made it out of the forest
+	  
+	  Test 2:
+	  
+	  Input(L, R)
+	  
+	  Expected Output: You died
+	                   You were trampled by a moose
+	  
+	  Actual Output: You died
+	                 You were trampled by a moose
+	  
+	  Test 3:
+	  
+	  Input(L, L, L)
+	  
+	  Expected Output: You died
+	                   You were mauled by a bear
+	  
+	  Actual Output: You died
+	                 You were mauled by a bear
+
+    Test 4:
+	  
+	  Input(R, L)
+	  
+	  Expected Output: You died
+	                   You forgot you are a terrible swimmer and drowned
+	  
+	  Actual Output: You died
+	                 You forgot you are a terrible swimmer and drowned
+	  
+	  
+    -->
+    </p>
+    <script src = "final.js"></script>
+  </body>
+</html>
